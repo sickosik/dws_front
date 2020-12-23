@@ -10,7 +10,7 @@ const Header = () => {
 
     return ( 
         <header className={styles.header}>
-            <Link to='/'>Recommand</Link>
+            <Link to='/'>Recommend</Link>
             <Link to='/main'>Main</Link>
             <Link to='/side'>Side</Link>
             <Link to='/beverage'>Beverage</Link>

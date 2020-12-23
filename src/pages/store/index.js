@@ -9,7 +9,7 @@ const Store  = () => {
         <Layout title="Store" description="This is the Store page" >
             <div >
                 <div className="text-center mt-5">
-                    <h1>Recommand Menu</h1>
+                    <h1>Recommend Menu</h1>
                     <p></p>
                 </div>
                 <ProductsGrid/>

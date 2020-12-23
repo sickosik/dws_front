@@ -24,7 +24,7 @@ const SideStore = () => {
           // loading 상태를 true 로 바꿉니다.
           setLoading(true);
 
-          const response = await axios.get('http://127.0.0.1:8000/menu/side');
+          const response = await axios.get('http://54.180.155.239:8000/menu/side');
         //   setProducts(response.data); // 데이터는 response.data 안에 들어있습니다.
 
           setProducts(response.data.map((e) => {
