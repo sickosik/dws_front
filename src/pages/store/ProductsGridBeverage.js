@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import ProductItem from './ProductItem';
-import { ProductsContext } from '../../contexts/ProductsContext';
+import { Beverage } from './Beverage';
 import styles from './ProductsGrid.module.scss';
 
-const ProductsGrid = () => {
+const ProductsGridBeverage = () => {
 
-    const { products} = useContext(ProductsContext)
+    const { productsBeverage} = useContext(Beverage)
 
     return ( 
         <div className={styles.p__container}>
             <div className="row">
                 <div className="col-sm-8">
                     <div className="py-3">
-                        {products.length} Products
+                        {productsBeverage.length} Products
                     </div>
                 </div>
                 {/* <div className="col-sm-4">
@@ -24,7 +24,7 @@ const ProductsGrid = () => {
             <div className={styles.p__grid}>
 
                 {
-                    products.map(product => (
+                    productsBeverage.map(product => (
                         <ProductItem key={product.id} product={product}/>
                     ))
                 }
@@ -37,4 +37,4 @@ const ProductsGrid = () => {
      );
 }
  
-export default ProductsGrid;
+export default ProductsGridBeverage;

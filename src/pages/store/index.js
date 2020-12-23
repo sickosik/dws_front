@@ -3,14 +3,14 @@ import Layout from '../../components/Layout';
 
 import ProductsGrid from './ProductsGrid';
 
-const Store = () => {
+const Store  = () => {
     
     return ( 
         <Layout title="Store" description="This is the Store page" >
             <div >
                 <div className="text-center mt-5">
-                    <h1>Store</h1>
-                    <p>This is the Store Page.</p>
+                    <h1>Recommand Menu</h1>
+                    <p></p>
                 </div>
                 <ProductsGrid/>
             </div>
@@ -18,4 +18,4 @@ const Store = () => {
      );
 }
  
-export default Store;
+export default Store ;
